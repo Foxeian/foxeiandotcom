@@ -21,7 +21,6 @@ export default function AboutMe() {
       scrollTrigger: {
         trigger: container.current,
         scrub: true,
-        // start: `top`,
         end: `+=${window.innerHeight / 1.5}`,
       },
       opacity: 1,
@@ -36,7 +35,10 @@ export default function AboutMe() {
     text.split(" ").forEach((word, i) => {
       const letters = splitLetters(word);
       body.push(
-        <p key={word + "_" + i} className="m-0 mr-3 text-5xl">
+        <p
+          key={word + "_" + i}
+          className="m-0 mr-2 text-3xl sm:mr-3 sm:text-5xl"
+        >
           {letters}
         </p>,
       );
@@ -64,19 +66,19 @@ export default function AboutMe() {
   };
 
   return (
-    <section className="flex justify-center p-20 text-[#d3d3d3]">
-      <div className="h-[675px] w-[675px]">
+    <section className="flex flex-wrap-reverse justify-center gap-20 p-4 pb-20 pt-20 text-[#d3d3d3] sm:p-20">
+      <div className="h-[475px] w-full sm:h-[675px] xl:w-[480px]">
         <Image
           src="/assets/images/immanuel.jpg"
           alt="Immanuel Ehsan"
-          className="h-full w-full object-cover object-[-290px]"
+          className="h-full w-full object-cover object-center"
           width={1334}
           height={750}
           quality={100}
           priority
         />
       </div>
-      <div className="ml-20 flex w-full flex-wrap content-center">
+      <div className="flex w-full flex-wrap content-center xl:w-1/2">
         <div ref={container} className="flex flex-wrap">
           {splitWords(
             "Immanuel Ehsan is a front-end developer with 2+ years of experience based in Russia. Specialized in immersive web experiences. I create a digital experience that borders on efficiency, aesthetics and functionality those are projects that have a soul.",
