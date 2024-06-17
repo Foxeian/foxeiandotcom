@@ -94,7 +94,7 @@ export default function Navbar() {
               </div>
             ))}
           </div>
-          <div className="flex">
+          <div className="flex flex-col lg:flex-row">
             <div className="flex flex-[1] flex-col justify-end gap-1.5 transition-[0.5s] duration-[ease-in-out]">
               {socialMediaLinks.map((link, index) => (
                 <Link
