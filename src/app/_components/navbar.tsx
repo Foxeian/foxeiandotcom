@@ -53,7 +53,7 @@ export default function Navbar() {
 
   return (
     <nav ref={container}>
-      <div className="fixed left-0 top-0 z-10 flex w-screen items-center justify-between p-8 text-black">
+      <div className="absolute left-0 top-0 z-10 flex w-full items-center justify-between p-8 text-black">
         <div
           className={`${bebasNeue.className} cursor-pointer text-xl tracking-widest underline underline-offset-4`}
         >
