@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`bg-black font-['HelveticaNeue']`}>
+    <html lang="en" className="bg-black font-['HelveticaNeue']">
       <body>
         <TRPCReactProvider>
           <Navbar />
