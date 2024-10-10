@@ -21,46 +21,6 @@ importers:
         specifier: ^5.4.5
         version: 5.4.5
 
-  apps/docs:
-    dependencies:
-      '@repo/ui':
-        specifier: workspace:*
-        version: link:../../packages/ui
-      next:
-        specifier: 14.2.6
-        version: 14.2.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      react:
-        specifier: 18.3.1
-        version: 18.3.1
-      react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
-    devDependencies:
-      '@repo/eslint-config':
-        specifier: workspace:*
-        version: link:../../packages/eslint-config
-      '@repo/typescript-config':
-        specifier: workspace:*
-        version: link:../../packages/typescript-config
-      '@types/node':
-        specifier: ^20
-        version: 20.11.24
-      '@types/react':
-        specifier: ^18
-        version: 18.2.61
-      '@types/react-dom':
-        specifier: ^18
-        version: 18.2.19
-      eslint:
-        specifier: ^8
-        version: 8.57.0
-      eslint-config-next:
-        specifier: 14.2.6
-        version: 14.2.6(eslint@8.57.0)(typescript@5.3.3)
-      typescript:
-        specifier: ^5
-        version: 5.3.3
-
   apps/web:
     dependencies:
       '@repo/ui':
@@ -149,10 +109,6 @@ importers:
   packages/typescript-config: {}
 
   packages/ui:
-    dependencies:
-      react:
-        specifier: ^18.2.0
-        version: 18.2.0
     devDependencies:
       '@repo/eslint-config':
         specifier: workspace:*
@@ -184,9 +140,18 @@ importers:
       eslint:
         specifier: ^8.57.0
         version: 8.57.0
+      next:
+        specifier: 14.2.6
+        version: 14.2.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       postcss:
         specifier: ^8.4.47
         version: 8.4.47
+      react:
+        specifier: 18.3.1
+        version: 18.3.1
+      react-dom:
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       tailwindcss:
         specifier: ^3.4.13
         version: 3.4.13(ts-node@10.9.1(@types/node@20.11.24)(typescript@5.3.3))
@@ -1890,6 +1855,7 @@ packages:
 
   loose-envify@1.4.0:
     resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
+    hasBin: true
 
   lower-case-first@1.0.2:
     resolution: {integrity: sha512-UuxaYakO7XeONbKrZf5FEgkantPf5DUqDayzP5VXZrtRPdH86s4kN47I8B3TW10S4QKiE3ziHNf3kRN//okHjA==}
@@ -2332,10 +2298,6 @@ packages:
 
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
-
-  react@18.2.0:
-    resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
-    engines: {node: '>=0.10.0'}
 
   react@18.3.1:
     resolution: {integrity: sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==}
@@ -5437,10 +5399,6 @@ snapshots:
       scheduler: 0.23.2
 
   react-is@16.13.1: {}
-
-  react@18.2.0:
-    dependencies:
-      loose-envify: 1.4.0
 
   react@18.3.1:
     dependencies:
